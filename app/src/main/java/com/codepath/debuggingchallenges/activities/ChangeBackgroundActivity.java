@@ -3,7 +3,10 @@ package com.codepath.debuggingchallenges.activities;
 import android.graphics.Color;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import com.codepath.debuggingchallenges.R;
 
@@ -18,6 +21,7 @@ public class ChangeBackgroundActivity extends AppCompatActivity {
     }
 
     public void onGoClick(View view) {
+        Log.d("ChangeBackground", "inside onGoClick");
         View mainView = findViewById(android.R.id.content);
         mainView.setBackgroundColor(getNextColor());
     }
